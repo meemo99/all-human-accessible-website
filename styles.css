@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.header-banner {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 100%;
+  background-color: #EBDAC5;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.intro-banner {
+  background-color: white;
+  height: auto;
+  width: 100%
+}
+
+h1 {
+  font-family: 'Geomanist, Helvetica Neue, Helvetica', sans-serif;
+  font-weight: 600;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Geomanist, Helvetica Neue, Helvetica', sans-serif;
+  font-weight: 400;
+}
+
+
+.navigation .nav-button {
+  flex: 1;
+  background-color: #EF858D;
+  outline-color: transparent;
+  margin: 6px;
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+}
+
+nav-container {
+  display: flex;
+  align-content: flex-end;
+}
+
+.nav-button:focus {
+background-color: #DBBE2C;
+color: black;
+}
+
+
+.introduction {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #5a7ab6;
+
+  
+
+  @media screen and (min-width: 961px) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 130ch;
+  }
+
+}
+
+.CID-logo { 
+  padding-right: 45px;
+  height: 110px;
+  width: 290px;
+}
+.case-banner {
+  background:#0d3951;
+}
+
+.case-studies {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+
+  @media screen and (min-width: 481px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 961px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.card{  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #EBDAC5;
+  margin: 12px;
+  padding: 0.5em;
+  border-radius: 5px;
+  max-width: 300px;
+  height: 320px;
+  box-shadow: 0.125rem 0 0 rgba(7,7,33,.15);
+}
+
+.card:hover {
+  background-color: #DBBE2C;
+}
+
+img {
+  border-radius: 5px;
+  height: 160px;
+  width: 290px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+
+.content:hover {
+  color: white;
+}
+
+
+
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 8px;
+  color: white;
+  gap: 15px;
+}
+
+
+.process{
+  display: flex;
+  background-color: #8bcbbd;
+  border-radius: 10px;
+  height: 20px;
+  width: auto;
+  padding: 3px;
+  box-shadow: 0 3px 0 rgba(7,7,33,.15);
+  justify-content: center;
+  align-items: center;
+}
+
+.participatie {
+  display: flex;
+  background-color: #EF858D;
+  border-radius: 10px;
+  height: 20px;
+  width: auto;
+  padding: 3px;
+  box-shadow: 0 3px 0 rgba(7,7,33,.15);
+  justify-content: center;
+  align-items: center;
+}
+
+.uitvoering {
+  display: flex;
+  background-color: #5a7ab6;
+  border-radius: 10px;
+  height: 20px;
+  width: auto;
+  padding: 3px;
+  box-shadow: 0 3px 0 rgba(7,7,33,.15);
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer {
+    background: #0d3951;
+
+}
