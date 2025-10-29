@@ -15,11 +15,6 @@ body {
   gap: 10px;
 }
 
-.intro-banner {
-  background-color: white;
-  height: auto;
-  width: 100%
-}
 
 h1 {
   font-family: 'Geomanist, Helvetica Neue, Helvetica', sans-serif;
@@ -28,6 +23,8 @@ h1 {
   text-transform: uppercase;
 }
 
+
+
 a {
   text-decoration: none;
   font-family: 'Geomanist, Helvetica Neue, Helvetica', sans-serif;
@@ -35,29 +32,11 @@ a {
 }
 
 
-.navigation .nav-button {
-  flex: 1;
-  background-color: #EF858D;
-  outline-color: transparent;
-  margin: 6px;
-  padding: 3px;
-  border-radius: 5px;
-  color: white;
-}
-
-nav-container {
-  display: flex;
-  align-content: flex-end;
-}
-
-.nav-button:focus {
-background-color: #DBBE2C;
-color: black;
-}
 
 
 .introduction {
-  margin: 10px;
+  background-color: white;
+  margin-left: 12px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -69,6 +48,7 @@ color: black;
     flex-direction: row;
     justify-content: space-between;
     max-width: 130ch;
+    height: 80px;
   }
 
 }
@@ -101,6 +81,7 @@ color: black;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: baseline;
   background-color: #EBDAC5;
   margin: 12px;
   padding: 0.5em;
@@ -110,26 +91,22 @@ color: black;
   box-shadow: 0.125rem 0 0 rgba(7,7,33,.15);
 }
 
-.card:hover {
-  background-color: #DBBE2C;
-}
 
-img {
+
+.card-img {
   border-radius: 5px;
   height: 160px;
-  width: 290px;
+  width: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  justify-items: center;
   align-items: center;
   color: black;
-}
-
-
-.content:hover {
-  color: white;
 }
 
 
@@ -137,50 +114,52 @@ img {
 .tags {
   display: flex;
   flex-flow: row wrap;
-  margin: 8px;
+  margin: 10px;
+  gap: 10px;
   color: white;
-  gap: 15px;
+  font-family: 'Geomanist,Helvetica Neue,Helvetica,sans-serif';
+  font-size: 13px;
+  line-height: 1;
 }
 
 
 .process{
   display: flex;
-  background-color: #8bcbbd;
+  background-color: #287999;
   border-radius: 10px;
   height: 20px;
   width: auto;
-  padding: 3px;
+  padding: 4px;
   box-shadow: 0 3px 0 rgba(7,7,33,.15);
   justify-content: center;
   align-items: center;
+  font-weight: 600;
 }
 
 .participatie {
   display: flex;
-  background-color: #EF858D;
+  background-color: #D13476;
   border-radius: 10px;
   height: 20px;
   width: auto;
-  padding: 3px;
+  padding: 4px;
   box-shadow: 0 3px 0 rgba(7,7,33,.15);
   justify-content: center;
   align-items: center;
+  font-weight: 600;
 }
 
 .uitvoering {
   display: flex;
-  background-color: #5a7ab6;
+  background-color: #75277C;
   border-radius: 10px;
   height: 20px;
   width: auto;
-  padding: 3px;
+  padding: 4px;
   box-shadow: 0 3px 0 rgba(7,7,33,.15);
   justify-content: center;
   align-items: center;
+  font-weight: 600;
 }
 
 
-.footer {
-    background: #0d3951;
-
-}
