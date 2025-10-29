@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  display: block;
+  box-sizing: border-box;
+  background-color: #000000;
 }
 
 .header-banner {
@@ -36,17 +37,17 @@ a {
 
 .introduction {
   background-color: white;
-  margin-left: 12px;
+  padding-left: 12px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   color: #5a7ab6;
-
-  
 
   @media screen and (min-width: 961px) {
     flex-direction: row;
     justify-content: space-between;
+    padding-right: 380px;
     max-width: 130ch;
     height: 80px;
   }
@@ -58,12 +59,11 @@ a {
   height: 110px;
   width: 290px;
 }
-.case-banner {
-  background:#0d3951;
-}
+
 
 .case-studies {
-  margin: 10px;
+  background:#0d3951;
+  padding: 10px;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 10px;
